@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AgroCàlcul · Ingressos i NPK</title>
+    <meta name="description" content="Ingressos, despeses i fertilització NPK." />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173d32'/%3E%3Cpath d='M8 24 16 7l8 17M11 19h10' fill='none' stroke='%23ddf479' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="./"><span>A</span>AgroCàlcul</a>
+      <nav aria-label="Apartats">
+        <button id="tab-production" class="active" aria-current="page">
+          <span aria-hidden="true">€</span>Ingressos i despeses</button
+        ><button id="tab-npk"><span aria-hidden="true">N</span>Fertilització NPK</button
+        ><button id="tab-config"><span aria-hidden="true">⚙</span>Configuració</button>
+      </nav>
+      <div class="sidebar-foot">AgroCàlcul <span>Privat</span></div>
+    </aside>
+    <main>
+      <div class="workspace-head">
+        <h1 id="feature-title">Ingressos i despeses</h1>
+        <div class="save-controls">
+          <span id="db-status" role="status">Carregant…</span
+          ><button id="retry" class="quiet" hidden>Reintentar</button
+          ><button id="reload" class="quiet" hidden>Recarregar</button>
+        </div>
+      </div>
+      <div id="record-toolbar" hidden></div>
+      <div id="loading" class="empty">Carregant…</div>
+      <div id="app" hidden>
+        <section id="production"></section>
+        <section id="npk" hidden></section>
+        <section id="config" hidden></section>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

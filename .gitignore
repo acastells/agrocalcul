@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.sites-runtime/
+.cache/
+
+.local/
+.env
+.env.*
+!.env.example
+*.log
