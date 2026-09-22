@@ -2,7 +2,7 @@
 
 Aplicación privada para gestionar ingresos y gastos agrícolas por periodo, configurar conceptos por defecto y calcular dosis de fertilizantes NPK. Interfaz en catalán y documentación técnica en español.
 
-Esta entrega **3.1.0** procede de la versión publicada **3**, commit `f0f5d23939e16691f70de4838e405434c7115234`. Incluye una revisión de mantenibilidad y correcciones descritas en [CHANGELOG.md](CHANGELOG.md). Es una copia de entrega: no se ha publicado sobre el sitio existente.
+Esta entrega **3.1.0** procede de la versión publicada **3**, commit `f0f5d23939e16691f70de4838e405434c7115234`. Incluye una revisión de mantenibilidad y correcciones descritas en [CHANGELOG.md](CHANGELOG.md).
 
 ## Inicio en cinco minutos
 
@@ -57,9 +57,3 @@ No incluye una copia de los datos actuales de la base de datos de producción, c
 | `npm run format:check` | Verifica formato sin escribir                               |
 | `npm run verify`       | Ejecuta sintaxis, análisis, formato, compilación y pruebas  |
 | `npm run db:generate`  | Genera una nueva migración tras editar `db/schema.ts`       |
-
-## Acceso y titularidad de datos
-
-Sites controla quién puede visitar el sitio. Dentro de la aplicación, los registros se separan por la identidad autenticada de cada usuario. Invitar a otra persona no le concede acceso a los datos del propietario. El rol de visitante de Sites permite usar la aplicación: no implica que los formularios internos sean de solo lectura.
-
-No se añade una licencia de código abierto en nombre del usuario. Las dependencias mantienen sus propias licencias. La documentación de entrega describe la implementación concreta, no sustituye asesoramiento agronómico ni una auditoría de seguridad.
